@@ -1,2 +1,2 @@
 # ClientBaseWEBStudio
-API for WEB Studio to keep a list of clients. DB - Postgesql, Apach server. +Docker
+API for WEB Studio to keep a list of clients. DB - Postgesql, Gorilla router. +Docker
