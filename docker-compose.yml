@@ -16,7 +16,7 @@ services:
     restart: always
     image: postgres:latest
     environment:
-      - POSTGRES_USER=db_user
+      - POSTGRES_USER=gipernova
       - POSTGRES_PASSWORD=qwerty
     ports:
       - 5432:5432
