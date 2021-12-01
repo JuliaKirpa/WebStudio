@@ -1,1 +1,6 @@
-package ClientBaseWEBStudio
+package main
+
+func main(){
+
+
+}
