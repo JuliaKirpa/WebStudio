@@ -1,6 +1,8 @@
 package main
 
-func main(){
+import "ClientBaseWEBStudio/api"
 
+func main(){
+	api.ServerUp()
 
 }

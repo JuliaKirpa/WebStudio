@@ -15,8 +15,6 @@ services:
     container_name: pg_db
     restart: always
     image: postgres:latest
-    volumes:
-      - ./.database/postgres/data:/var/lib/postgresql/data
     environment:
       - POSTGRES_USER=db_user
       - POSTGRES_PASSWORD=qwerty
