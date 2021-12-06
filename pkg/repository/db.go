@@ -1,34 +1,27 @@
 package repository
 
 import (
+	"ClientBaseWEBStudio/pkg/models"
+	"fmt"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 )
 
+var database *gorm.DB
 
 func DBconnect(){
-	dsn := "host=localhost user=gipernova password=qwerty dbname=cbWEBs port=5432 sslmode=disable"
+	dsn := "host=localhost user=gipernova password=qwerty dbname=cbwebs port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
 		panic(err.Error())
 	}
-	err = InitModels(db)
+	err = models.InitModels(db)
 	if err != nil {
 		panic(err)
 	}
-}
 
-type Client struct {
-	ID 		int
-	Name 	string
-	Check	int
+	fmt.Println("Connect to pg success")
 
 }
 
-func InitModels(db *gorm.DB) error {
-	err := db.AutoMigrate(&Client{})
-	if err != nil {
-		return err
-	}
-	return nil
-}
+

@@ -11,13 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d847ff-b9ec-4328-a8cc-a19ae0d69e27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/pkg/repository/db.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/go.sum" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pkg/repository/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/repository/db.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +61,7 @@
       <recent name="C:\Users\Lia\Desktop\Golang\ClientBaseWEBStudio\api" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Build.go build ClientBaseWEBStudio">
+  <component name="RunManager" selected="Go Build.go build ClientBaseWEBStudio/cmd">
     <configuration name="go build ClientBaseWEBStudio" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="ClientBaseWEBStudio" />
       <working_directory value="$PROJECT_DIR$" />
@@ -82,8 +80,18 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build ClientBaseWEBStudio/cmd" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="ClientBaseWEBStudio" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/cmd/main.go" />
+      <package value="ClientBaseWEBStudio/cmd" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build ClientBaseWEBStudio/cmd" />
         <item itemvalue="Go Build.go build ClientBaseWEBStudio" />
         <item itemvalue="Go Build.go build ClientBaseWEBStudio/api" />
       </list>
@@ -99,7 +107,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1638279177031</updated>
-      <workItem from="1638279198797" duration="23692000" />
+      <workItem from="1638279198797" duration="24404000" />
+      <workItem from="1638431666469" duration="5484000" />
+      <workItem from="1638612643701" duration="5003000" />
+      <workItem from="1638706817127" duration="613000" />
+      <workItem from="1638801270933" duration="1816000" />
     </task>
     <servers />
   </component>
@@ -113,6 +125,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -126,22 +139,38 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1638380283240" />
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1638382807646">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1638457496302">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638382807646" />
-    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1638382807645">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638457496302" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1638457496301">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638382807645" />
-    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1638382807645">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638457496301" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1638457496301">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638382807645" />
-    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1638382807645">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638457496301" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1638457496302">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638382807645" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638457496302" />
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1638457496294">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638457496294" />
+    <state width="1323" height="238" key="GridCell.Tab.1.center" timestamp="1638457496294">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.center/0.0.1366.768@0.0.1366.768" timestamp="1638457496294" />
+    <state width="1323" height="238" key="GridCell.Tab.1.left" timestamp="1638457496294">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.left/0.0.1366.768@0.0.1366.768" timestamp="1638457496294" />
+    <state width="1323" height="238" key="GridCell.Tab.1.right" timestamp="1638457496294">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1323" height="238" key="GridCell.Tab.1.right/0.0.1366.768@0.0.1366.768" timestamp="1638457496294" />
     <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638373053896">
       <screen x="0" y="0" width="1366" height="768" />
     </state>

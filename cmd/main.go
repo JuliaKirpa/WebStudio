@@ -7,6 +7,6 @@ import (
 
 func main(){
 	api.ServerUp()
-	repository.DBconnect()
+	go repository.DBconnect()
 
 }
