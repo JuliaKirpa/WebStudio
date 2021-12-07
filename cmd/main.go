@@ -8,5 +8,4 @@ import (
 func main(){
 	api.ServerUp()
 	go repository.DBconnect()
-
 }

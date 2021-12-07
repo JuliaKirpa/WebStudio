@@ -3,15 +3,9 @@ package models
 import "gorm.io/gorm"
 
 type Client struct {
+	gorm.Model
 	ID 		int
 	Name 	string
 	Check	int
 }
 
-func InitModels(db *gorm.DB) error {
-	err := db.AutoMigrate(&Client{})
-	if err != nil {
-		return err
-	}
-	return nil
-}

@@ -7,21 +7,20 @@ import (
 	"gorm.io/gorm"
 )
 
-var database *gorm.DB
 
 func DBconnect(){
-	dsn := "host=localhost user=gipernova password=qwerty dbname=cbwebs port=5432 sslmode=disable"
+	dsn := "host=localhost user=gipernova password=qwerty dbname=postgres port=5432 sslmode=disable"
 	db, err := gorm.Open(postgres.Open(dsn), &gorm.Config{})
 	if err != nil {
-		panic(err.Error())
+		panic("failed to connect database")
 	}
-	err = models.InitModels(db)
-	if err != nil {
-		panic(err)
-	}
+
+	db.AutoMigrate(&models.Client{})
+
+
+	db.Create(&models.Client{ID: 6778, Name: "Lia", Check: 1456})
 
 	fmt.Println("Connect to pg success")
-
 }
 
 
