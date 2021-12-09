@@ -18,7 +18,7 @@ func DBconnect(){
 	db.AutoMigrate(&models.Client{})
 
 
-	db.Create(&models.Client{ID: 6778, Name: "Lia", Check: 1456})
+	db.Create(&models.Client{ID: 6778, Name: "Lia", Telephone: 1456, Email: "lia_shongmao"})
 
 	fmt.Println("Connect to pg success")
 }

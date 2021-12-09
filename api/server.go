@@ -6,6 +6,7 @@ import (
 	"net/http"
 )
 
+
 func ServerUp(){
 	r := mux.NewRouter()
 	r.HandleFunc("/", func(w http.ResponseWriter, r *http.Request){
@@ -13,3 +14,4 @@ func ServerUp(){
 	})
 	_ = http.ListenAndServe(":8080", r)
 }
+

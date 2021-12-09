@@ -11,12 +11,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4d847ff-b9ec-4328-a8cc-a19ae0d69e27" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/handler/handler.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pkg/models/Order.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmd/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/cmd/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/server.go" beforeDir="false" afterPath="$PROJECT_DIR$/api/server.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/models/Client.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/models/Client.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pkg/repository/db.go" beforeDir="false" afterPath="$PROJECT_DIR$/pkg/repository/db.go" afterDir="false" />
     </list>
@@ -57,6 +55,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Mastering-Go-Second-Edition-master/ch12/kvWeb.go" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -117,7 +116,8 @@
       <workItem from="1638706817127" duration="613000" />
       <workItem from="1638801270933" duration="17281000" />
       <workItem from="1638824896983" duration="721000" />
-      <workItem from="1638881745955" duration="1412000" />
+      <workItem from="1638881745955" duration="7043000" />
+      <workItem from="1638903755464" duration="1622000" />
     </task>
     <servers />
   </component>
@@ -149,26 +149,26 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="445" y="186" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.768@0.0.1366.768" timestamp="1638887829250" />
-    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1638380283240">
+    <state x="463" y="139" key="FileChooserDialogImpl" timestamp="1638902319782">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1638380283240" />
-    <state width="1323" height="238" key="GridCell.Tab.0.bottom" timestamp="1638823646043">
+    <state x="463" y="139" key="FileChooserDialogImpl/0.0.1366.768@0.0.1366.768" timestamp="1638902319782" />
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom" timestamp="1639033998322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1638823646043" />
-    <state width="1323" height="238" key="GridCell.Tab.0.center" timestamp="1638823646043">
+    <state width="1323" height="192" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1639033998322" />
+    <state width="1323" height="192" key="GridCell.Tab.0.center" timestamp="1639033998322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1638823646043" />
-    <state width="1323" height="238" key="GridCell.Tab.0.left" timestamp="1638823646043">
+    <state width="1323" height="192" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1639033998322" />
+    <state width="1323" height="192" key="GridCell.Tab.0.left" timestamp="1639033998321">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1638823646043" />
-    <state width="1323" height="238" key="GridCell.Tab.0.right" timestamp="1638823646043">
+    <state width="1323" height="192" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1639033998321" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right" timestamp="1639033998322">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state width="1323" height="238" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1638823646043" />
+    <state width="1323" height="192" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1639033998322" />
     <state width="1323" height="238" key="GridCell.Tab.1.bottom" timestamp="1638823646043">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
@@ -189,9 +189,17 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state width="208" height="471" key="HiddenNamespacesPopup/0.0.1366.768@0.0.1366.768" timestamp="1638819733521" />
+    <state x="184" y="29" key="SettingsEditor" timestamp="1638889466841">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="184" y="29" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1638889466841" />
     <state x="275" y="117" key="Vcs.Push.Dialog.v2" timestamp="1638373053896">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="275" y="117" key="Vcs.Push.Dialog.v2/0.0.1366.768@0.0.1366.768" timestamp="1638373053896" />
+    <state x="65" y="0" key="new project wizard" timestamp="1639033995607">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="65" y="0" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1639033995607" />
   </component>
 </project>
