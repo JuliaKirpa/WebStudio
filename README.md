@@ -1,4 +1,4 @@
 # ClientBaseWEBStudio
-API for WEB Studio to keep a list of clients. DB - Postgesql, Gorilla router. +Docker
+CRUD RESTful API for WEB Studio to keep a list of clients. Postgres, Gorilla router, GORM +Docker
 
 #project in progress...
