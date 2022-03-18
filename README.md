@@ -4,7 +4,7 @@ ____
 # Technologies
 Progect is created with:
 - GO
-- Postgres
+- SQLite
 - Docker
 - GORM
 ____
