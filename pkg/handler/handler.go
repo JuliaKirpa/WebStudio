@@ -14,7 +14,7 @@ func (h *Handler) InitRoutes() *gin.Engine {
 	}
 	order := router.Group("/order")
 	{
-		client := router.Group("/client")
+		client := order.Group("/client")
 		{
 			client.POST("/")
 			client.GET("/")
