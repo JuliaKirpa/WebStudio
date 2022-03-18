@@ -6,10 +6,6 @@ func (h *Handler) createClient(c *gin.Context) {
 
 }
 
-func (h *Handler) getClient(c *gin.Context) {
-
-}
-
 func (h *Handler) getClientById(c *gin.Context) {
 
 }

@@ -1,8 +1,16 @@
 package handler
 
-import "github.com/gin-gonic/gin"
+import (
+	"ClientBaseWEBStudio/pkg/service"
+	"github.com/gin-gonic/gin"
+)
 
 type Handler struct {
+	service *service.Service
+}
+
+func NewHandler(service *service.Service) *Handler {
+	return &Handler{service: service}
 }
 
 func (h *Handler) InitRoutes() *gin.Engine {
@@ -23,16 +31,16 @@ func (h *Handler) InitRoutes() *gin.Engine {
 		client := order.Group("/client")
 		{
 			client.POST("/", h.createClient)
-			client.GET("/", h.getClient)
+			client.GET("/", h.getAllClients)
 			client.GET("/:id", h.getClientById)
 			client.PUT("/:id", h.updateClient)
 			client.DELETE("/:id", h.deleteClient)
 		}
 
-		servise := order.Group("/service")
+		product := order.Group("/service")
 		{
-			servise.POST("/", h.addService)
-			servise.DELETE("/:id", h.deleteService)
+			product.POST("/", h.addProduct)
+			product.DELETE("/:id", h.deleteProduct)
 		}
 	}
 	return router

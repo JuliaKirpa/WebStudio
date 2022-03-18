@@ -2,7 +2,7 @@ package models
 
 import "gorm.io/gorm"
 
-type Service struct {
+type Product struct {
 	gorm.Model
 	ID    uint   `gorm:"primary_key; auto-increment" json:"ID"`
 	Name  string `gorm:"size 255; not-null" json:"name"`
